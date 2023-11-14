@@ -45,6 +45,32 @@ main {
     padding: 20px;
 }
 
+.nav {
+    background: linear-gradient(45deg, blue, crimson);
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    transition-duration: 1s;
+    flex-direction: column;
+}
+
+.nav>p {
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
 footer {
     background-color: red;
     padding: 20px;
@@ -101,6 +127,6 @@ footer {
     justify-content: center;
     font-weight: bold;
     color: white;
-    border:none;
-    border-radius:15px;
+    border: none;
+    border-radius: 15px;
 }

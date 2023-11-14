@@ -37,17 +37,22 @@
 <body class="body">
     <header class="header">
         <h1>ExpnIT</h1>
-        <div class="menu">
+        <div class="menu" onclick="navController()">
             <hr />
             <hr />
             <hr />
         </div>
     </header>
+    <nav class="nav">
+        <p onclick="init('cpp'); navController() ">C++</p>
+        <p onclick="init('csharp'); navController()">C#</p>
+        <p onclick="navController()">Close</p>
+    </nav>
 
     <main class="main">
         <article class="article">
             <section class="btn-container">
-                <div class="btn" onclick="prev()">Prev</div>
+                <div class="btn" onclick="prev();">Prev</div>
                 <div class="btn" onclick="next()">Next</div>
             </section>
             <section class="root" id="root"></section>
@@ -61,5 +66,6 @@
     <footer class="footer"></footer>
 </body>
 <script src="local/js/app.js" type="module"></script>
+<script src="local/js/utility.js"></script>
 
 </html>

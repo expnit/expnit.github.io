@@ -1,47 +1,58 @@
 class Service {
 
     static init(arrayData = [], rootElement = "") {
-        this.index = 0;
-        this.data = arrayData[this.index];
-        this.arrayLength = arrayData.length;
-        this.root = document.getElementById(rootElement)
+        Service.index = 0;
+        Service.data = arrayData[Service.index];
+        Service.arrayLength = arrayData.length;
+        Service.root = document.getElementById(rootElement)
+    }
+
+    static reset() {
+
+        Service.index = 0;
+        Service.data = null;
+        Service.arrayLength = 0;
+        Service.root = null;
     }
 
     //=====================
     static addHeading(data) {
-        this.root.innerHTML += `<h1>${data}</h1>`;
+        Service.root.innerHTML += `<h1>${data}</h1>`;
+
     }
 
     static addParagraph(data) {
-        this.root.innerHTML += `<p>${data}</p>`;
+        Service.root.innerHTML += `<p>${data}</p>`;
     }
 
     static addObject(data) {
         for (let index in data) {
-            this.root.innerHTML += `<p>${data[index]}</p>`;
+            Service.root.innerHTML += `<p>${data[index]}</p>`;
         }
     }
 
     static addImage(data) {
-        this.root.innerHTML += `<img src="${data}" class="expn-image" />`;
+        Service.root.innerHTML += `<img src="${data}" class="expn-image" />`;
     }
 
     // =====================
 
     static render() {
+
+        Service.root.innerHTML = ""; // clear previous content
         for (let index in this.data) {
-            this.addHeading(this.data[index]["title"]);
+            Service.addHeading(Service.data[index]["title"]);
 
             if (
-                this.data[index]["type"] !== "object" &&
-                this.data[index]["type"] !== "image" ||
-                this.data[index]["type"] === undefined
+                Service.data[index]["type"] !== "object" &&
+                Service.data[index]["type"] !== "image" ||
+                Service.data[index]["type"] === undefined
             ) {
-                this.addParagraph(this.data[index]["content"]);
-            } else if (this.data[index]["type"] === "object") {
-                this.addObject(this.data[index]["content"]);
-            } else if (this.data[index]["type"] === "image") {
-                this.addImage(this.data[index]["url"]);
+                Service.addParagraph(Service.data[index]["content"]);
+            } else if (Service.data[index]["type"] === "object") {
+                Service.addObject(Service.data[index]["content"]);
+            } else if (Service.data[index]["type"] === "image") {
+                Service.addImage(Service.data[index]["url"]);
             }
         }
     }
@@ -69,6 +80,11 @@ class Service {
         Service.render()
     }
 }
+
+// set global function
+
+window.next = Service.next;
+window.prev = Service.prev;
 
 
 export { Service };
