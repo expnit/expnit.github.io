@@ -1,5 +1,7 @@
 import { data as introduction } from "./basic/introduction.js";
-const csharpArray = [introduction]
+import {data as helloWorld} from "./basic/helloWorld.js"
+
+const csharpArray = [introduction, helloWorld]
 
 
 export { csharpArray }

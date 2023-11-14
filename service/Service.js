@@ -60,8 +60,6 @@ class Service {
     // next and previous
     static next() {
 
-        console.log("next")
-
         if (Service.index < Service.arrayLength - 1) {
             ++Service.index;
         } else {
