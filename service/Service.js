@@ -7,14 +7,6 @@ class Service {
         Service.root = document.getElementById(rootElement)
     }
 
-    static reset() {
-
-        Service.index = 0;
-        Service.data = null;
-        Service.arrayLength = 0;
-        Service.root = null;
-    }
-
     //=====================
     static addHeading(data) {
         Service.root.innerHTML += `<h1>${data}</h1>`;
@@ -60,6 +52,7 @@ class Service {
     // next and previous
     static next() {
 
+        console.log("Next : index : ", Service.index)
         if (Service.index < Service.arrayLength - 1) {
             ++Service.index;
         } else {
@@ -69,6 +62,7 @@ class Service {
     }
 
     static prev() {
+        console.log("Prev : index : ", Service.index)
 
         if (Service.index > 0) {
             --Service.index;

@@ -2,7 +2,7 @@
 import { Service } from "./Service.js";
 
 const startController = function (array = []) {
-    Service.init(array, "root");
+    Service.initService(array,"root")
     Service.render();
 
 }
