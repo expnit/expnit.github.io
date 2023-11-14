@@ -1,12 +1,17 @@
 class Service {
 
-    static init(arrayData = [], rootElement = "") {
+    static main(arrayData = [], rootElement) {
         Service.index = 0;
         Service.data = arrayData[Service.index];
         Service.arrayLength = arrayData.length;
         Service.root = document.getElementById(rootElement)
     }
 
+    static init(arrayData = [], rootElement = "") {
+        Service.data = arrayData[Service.index];
+        Service.arrayLength = arrayData.length;
+        Service.root = document.getElementById(rootElement)
+    }
     //=====================
     static addHeading(data) {
         Service.root.innerHTML += `<h1>${data}</h1>`;
@@ -52,7 +57,8 @@ class Service {
     // next and previous
     static next() {
 
-        console.log("Next : index : ", Service.index)
+        console.log("data : ", Service.data)
+
         if (Service.index < Service.arrayLength - 1) {
             ++Service.index;
         } else {
@@ -62,7 +68,7 @@ class Service {
     }
 
     static prev() {
-        console.log("Prev : index : ", Service.index)
+        console.log("data : ", Service.data)
 
         if (Service.index > 0) {
             --Service.index;
