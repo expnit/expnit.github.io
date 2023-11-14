@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+header {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: white
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.menu>hr {
+    width: 20px;
+    height: 5px;
+    margin: 2px;
+    border: none;
+    background-color: black;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    color: white
+}
+
+/* 
+
+=======================
+*/
+.root {
+    color: white;
+    line-height: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.root>p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-inline: 20px;
+    text-wrap: wrap;
+}
+
+.cpp-heading {
+    color: yellow;
+    font-weight: bold;
+}
+
+.cpp-heading::after {
+    content: " : ";
+}
+
+.expn-code {
+    background-color: white;
+    color: yellow;
+    font-weight: bold;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+}
+
+.btn {
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    border:none;
+    border-radius:15px;
+}
