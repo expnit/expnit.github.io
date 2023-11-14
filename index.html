@@ -34,7 +34,7 @@
 
 </head>
 
-<body class="body">
+<body class="body" onload="init('cpp')">
     <header class="header">
         <h1>ExpnIT</h1>
         <div class="menu" onclick="navController()">
@@ -57,8 +57,8 @@
             </section>
             <section class="root" id="root"></section>
             <section class="btn-container">
-                <div class="btn">Prev</div>
-                <div class="btn">Next</div>
+                <div class="btn" onclick="prev();">Prev</div>
+                <div class="btn" onclick="next()">Next</div>
             </section>
         </article>
         <aside class="aside"></aside>
