@@ -81,10 +81,6 @@ class Service {
     }
 }
 
-// set global function
-
-window.next = Service.next;
-window.prev = Service.prev;
 
 
 export { Service };
