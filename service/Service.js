@@ -33,6 +33,9 @@ class Service {
         Service.root.innerHTML += `<img src="${data}" class="expn-image" />`;
     }
 
+    static addElement(data) {
+    }
+
     // =====================
 
     static render() {
