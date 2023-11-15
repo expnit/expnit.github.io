@@ -1,10 +1,10 @@
 import { Service } from "./Service.js";
-import { csharpArray } from "../cloud/home/technology/programming/csharp/csharp.js";
+import { homeArray } from "../cloud/home/home/home.js";
 
 
 // ===================================
-Service.start(csharpArray, "root")
-Service.init(csharpArray, "root");
+Service.start(homeArray, "root")
+Service.init(homeArray, "root");
 Service.render();
 // =====================================
 

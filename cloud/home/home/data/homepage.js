@@ -1,7 +1,7 @@
 const data = {
     "expn": {
         title: "Welcome",
-        type: "object",
+        type: "element",
         content: {
             0: `ExpnIT is your ultimate destination for exploring and mastering the ever-evolving world of technology. Whether you're a seasoned programmer or a budding tech enthusiast, our comprehensive platform provides a wealth of resources and guidance to help you achieve your digital goals.`,
             1: `Delve into the depths of Linux, programming languages, software development, game development, and frameworks with our in-depth tutorials, practical exercises, and expert-led workshops. Our interactive learning environment ensures that you grasp even the most complex concepts with ease.`,
@@ -14,7 +14,7 @@ const data = {
 
     "Technology": {
         title: "Technology",
-        type: "object",
+        type: "element",
         content: {
             0: `    "title": "Technology: A Vast and Ever-Evolving Ocean of Possibilities",
             "description": "Technology is like an ocean, vast and ever-evolving. It's a world of endless possibilities, where you can explore and learn something new every day. With passion and dedication, you can become a master of technology and use it to create amazing things. Whether you're passionate about designing sleek websites, developing captivating mobile apps, or conjuring mesmerizing virtual worlds, technology has the power to turn your dreams into reality.",`,

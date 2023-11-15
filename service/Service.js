@@ -1,3 +1,4 @@
+import { Expn } from "../local/js/expn.js";
 class Service {
 
     static start(arrayData = [], rootElement) {
@@ -33,7 +34,8 @@ class Service {
         Service.root.innerHTML += `<img src="${data}" class="expn-image" />`;
     }
 
-    static addElement(data) {
+    static addElement(data = {}) {
+        console.log("element");
     }
 
     // =====================
@@ -43,7 +45,7 @@ class Service {
         Service.init(Service.array, "root"); // root 
         Service.root.innerHTML = ""; // clear previous content
 
-        for (let index in this.data) {
+        for (let index in Service.data) {
             Service.addHeading(Service.data[index]["title"]);
 
             if (
@@ -56,6 +58,10 @@ class Service {
                 Service.addObject(Service.data[index]["content"]);
             } else if (Service.data[index]["type"] === "image") {
                 Service.addImage(Service.data[index]["url"]);
+            }
+            else if (Service.data[index]["type"] === "element") {
+                console.log(Service.data[index]["content"])
+                Service.addElement(Service.data[index]["content"]);
             }
         }
     }
