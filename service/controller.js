@@ -1,7 +1,13 @@
 import { Service } from "./Service.js";
 import { csharpArray } from "../cloud/home/technology/programming/csharp/csharp.js";
 
-Service.main(csharpArray,"root");
+
+// ===================================
+Service.start(csharpArray, "root")
+Service.init(csharpArray, "root");
+Service.render();
+// =====================================
+
 
 const startController = function (array = []) {
     Service.init(array, "root")
