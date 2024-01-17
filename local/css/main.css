@@ -42,11 +42,27 @@
     border: 0px;
 }
 
+
+.nav {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 0%;
+    transition-duration: 0.3s;
+}
+
 .main {
     min-height: 100vh;
 }
 
 .footer {
+    height: 50px;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
