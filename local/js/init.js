@@ -15,7 +15,13 @@ const nav = function () {
 
 }
 
+const goTo = function (url = "") {
 
+    window.location = `https://expnit.github.io/${url}`;
+
+}
+
+// =============
 const init = function () {
     copyright(); // called copyright function
 }
