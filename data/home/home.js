@@ -43,4 +43,32 @@ const news = [
     }
 ];
 
-export { technology, sanatan }
+// ==========================
+
+// =========== various index for various field
+
+let technologyIndex = 0;
+
+let sanatanIndex = 0;
+
+
+let index = 0;
+
+const load = function (currentIndex = 0, arrayData = []) {
+
+    // document.querySelector(".container-slide").innerHTML = arrayData[index]["image"];
+
+    document.querySelector(".container-text").innerHTML = arrayData[index]["data"];
+
+    if (index < arrayData.length - 1) {
+        index++;
+    }
+    else {
+        index = 0;
+    }
+
+}
+
+
+    
+export { technology, sanatan, index, load }
