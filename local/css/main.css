@@ -61,6 +61,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
 }
 
 .nav>button {
@@ -86,43 +87,6 @@ body {
     min-height: 100vh;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.container-index-buttons {
-    height: 60px;
-    display: flex;
-}
-
-.container-text {
-    padding: 50px;
-    line-height: 35px;
-    font-size: 22px;
-}
-
-.image-loader {
-    width: 100%;
-    padding: 50px;
-}
-
-.container-index-buttons>button {
-    height: 40px;
-    width: 80px;
-    border: none;
-    margin: 4px;
-    background-color: lime;
-    color: black;
-    border-radius: 10px;
-}
-
-.startStopButton {
-    background-color: lime;
-    color: black;
-}
 
 
 .footer {
